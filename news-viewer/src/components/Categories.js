@@ -1,6 +1,7 @@
 import styled, {css} from "styled-components";
 import { NavLink } from "react-router-dom";
 
+// 카테고리 선택 UI 만들기
 const categories = [
     {
         name: 'all',
@@ -42,6 +43,7 @@ const CategoriesBlock = styled.div`
         overflow-x: auto;
     }`;
 
+    
 const Category = styled(NavLink)`
     font-size: 1.125rem;
     cursor: pointer;

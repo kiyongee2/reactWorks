@@ -16,6 +16,8 @@ const NewsListBlock = styled.div`
         padding-right: 1rem;
     }`;
 
+// API를 요청하고 뉴스 데이터가 있는 배열을 컴포넌트 배열로 
+//변환하여 랜더링 해주는 컴포넌트
 const NewsList = ({ category }) => {
     const [loading, response, error] = usePromise(() => {
         const query = category === 'all' ? '' : `&category=${category}`;

@@ -29,6 +29,7 @@ const NewsItemBlock = styled.div`
         margin-top: 3rem;
     }`;
 
+// 뉴스 정보를 보여주는 컴포넌트
 const NewsItem = ({ article }) => {
     const { title, description, url, urlToImage} = article;
 
